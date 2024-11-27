@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swiminfo - Contact us</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+            background-color: lightblue;
+        }
+ 
+        form {
+            display: inline-block;
+            text-align: left;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+ 
+        input, button {
+            display: block;
+            width: 80%;
+            margin-bottom: 10px;
+            padding: 10px;
+            margin-right: auto;
+            margin-left: autoj;
+        }
+ 
+        button {
+            background-color: #4e44a7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+</style>
+ 
+    <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+ 
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDd9IxB39lrTtWzAyTRJia-98GloviqmkE",
+            authDomain: "baku-c9fa4.firebaseapp.com",
+            databaseURL: "https://baku-c9fa4-default-rtdb.firebaseio.com",
+            projectId: "baku-c9fa4",
+            storageBucket: "baku-c9fa4.appspot.com",
+            messagingSenderId: "688301754213",
+            appId: "1:688301754213:web:3eb9b4134cac38e182c38c",
+            measurementId: "G-GQJNPTWMBX"
+        };
+ 
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+ 
+        // Reference to the Realtime Database
+        const database = firebase.database();
+ 
+        // Submit Form Data to Firebase
+        function submitContactForm(event) {
+            event.preventDefault(); // Prevent page reload
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+ 
+            database.ref('contacts').push({
+                name: name,
+                email: email,
+                message: message
+            })
+            .then(() => {
+                alert('Your message has been sent successfully!');
+                document.getElementById('contactForm').reset();
+            })
+            .catch((error) => {
+                alert('Error: ' + error.message);
+            });
+        }
+</script>
+</head>
+<body>
+<h1>Swiminfo - Contact us</h1>
+<form id="contactForm" onsubmit="submitContactForm(event)">
+<input type="text" id="name" name="name" placeholder="Enter your name" required>
+<input type="email" id="email" name="email" placeholder="Enter your email" required>
+<input type="text" id="message" name="message" placeholder="Enter your message" required>
+<button type="submit">Submit</button>
+</form>
+</body>
+</html>
