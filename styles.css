@@ -10,7 +10,7 @@ a {
     text-decoration: none;
     padding: 10px 20px;
     margin: 10px;
-    color: white;
+    color:  darkblue;
 }
 .image-gallery {
     display: flex;
@@ -37,6 +37,19 @@ a {
 position: absolute;
 right: 0;
 top: 0;
-height: 10em;
+height: 20em;
 z-index: -1;
+}
+
+.imageandtext {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.description {
+    width: 30%;
+    margin: 10px;
+    text-align: left;
+    font-size: 1.5em;
 }

@@ -1,32 +1,249 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Home - My Project</title> 
-    <link rel="stylesheet" href="styles.css">
-</head> 
-<body> 
-
-    <h1>Top 10 best swimmers in the world</h1> 
-    <img src="WEBSITE_LOGO.png" class="logo">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Swimmers in the World</title>
+<style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+ 
+        /* Header Section */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+        }
+ 
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+ 
+        header .pdf-links {
+            display: flex;
+            gap: 15px;
+        }
+ 
+        header .pdf-links a {
+            text-decoration: none;
+            color: white;
+            background-color: #0073e6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+ 
+        header .pdf-links a:hover {
+            background-color: #005bb5;
+        }
+ 
+        /* Navigation Bar */
+        .Navigation-bar {
+            text-align: center;
+            margin: 20px 0;
+        }
+ 
+        .Navigation-bar a {
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            color: white;
+            background-color: #0073e6;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+ 
+        .Navigation-bar a:hover {
+            background-color: #005bb5;
+        }
+ 
+        /* Image Gallery */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+ 
+        .imageandtext {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+        }
+ 
+        .imageandtext img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+ 
+        .imageandtext .description {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+ 
+        /* Anchor Button */
+        .anchor-button {
+            text-align: center;
+            margin: 20px 0;
+        }
+ 
+        .anchor-button a {
+            text-decoration: none;
+            padding: 10px 15px;
+            background-color: #0073e6;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+ 
+        .anchor-button a:hover {
+            background-color: #005bb5;
+        }
+ 
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004080;
+            color: white;
+            margin-top: 30px;
+        }
+</style>
+</head>
+<body>
+<header>
+<h1>Top 10 Best Swimmers in the World</h1>
+<div class="pdf-links">
+<a href="PERFORMANCE EDITION.pdf" target="_blank">Performance Edition</a>
+<a href="SPEED EDITION.pdf" target="_blank">Speed Edition</a>
+</div>
+</header>
+ 
     <div class="Navigation-bar">
-    <a href="about.html">About Us</a> 
-    <a href="ContactUs.html">Contact Us</a>
-    </div>
-
-    <!-- Image Gallery -->
-    <div class="image-gallery">
-        <img src="Summer Mcintosh.png" alt="Example Image 1">  
-        <img src="Pan Zhanle.jpg" alt="Example Image 2">
-        <img src="Leon Marchand.jpg" alt="Example Image 3">
-        <img src="Regan Smith.jpg" alt="Example Image 4">
-        <img src="Ryan Lochte.jpg" alt="Example Image 5">
-        <img src="Kristof Milak.jpg" alt="Example Image 6">
-        <img src="Michael Phelps.png" alt="Example Image 7">
-        <img src="Kaylee McKeown.jpg" alt="Example Image 8">
-        <img src="Katie Ledecky.jpg" alt="Example Image 9">
-        <img src="Caeleb Dressel.jpg" alt="Example Image 10">
-    </div>
+<a href="about.html">About Us</a>
+<a href="ContactUs.html">Contact Us</a>
+</div>
+ 
+    <!-- Image Gallery for Top 5 -->
+<div class="image-gallery">
+<!-- Athlete 1 -->
+<div class="imageandtext">
+<img src="Summer Mcintosh.png" alt="Summer McIntosh">
+<div class="description">
+<strong>1. Summer McIntosh</strong><br>
+                Summer McIntosh is a world record holder and has won many medals. At just 17 years old, she has three Olympic gold medals and one silver from the 2024 Games. She excels in events like the 200m and 400m individual medley and the 200m butterfly, where she set a world record time of 4:24.38 in the 400m individual medley.
+</div>
+</div>
+ 
+        <!-- Athlete 2 -->
+<div class="imageandtext">
+<img src="Pan Zhanle.jpg" alt="Pan Zhanle">
+<div class="description">
+<strong>2. Pan Zhanle</strong><br>
+                Pan Zhanle holds the world record for the 100-meter freestyle, with an impressive time of 46.40 seconds. He is the first Chinese swimmer to swim under 22 seconds in the 50-meter freestyle, under 47 seconds in the 100-meter freestyle, and under 1:45 in the 200-meter freestyle.
+</div>
+</div>
+ 
+        <!-- Athlete 3 -->
+<div class="imageandtext">
+<img src="Leon Marchand.jpg" alt="Leon Marchand">
+<div class="description">
+<strong>3. Leon Marchand</strong><br>
+                Leon Marchand holds the world record in the 400m individual medley in a time of 4:02.50, breaking Michael Phelps' long-standing record. His achievements and potential make him one of the sport's brightest stars.
+</div>
+</div>
+ 
+        <!-- Athlete 4 -->
+<div class="imageandtext">
+<img src="Regan Smith.jpg" alt="Regan Smith">
+<div class="description">
+<strong>4. Regan Smith</strong><br>
+                Regan Smith holds world records in backstroke and excels in butterfly and medley events. Her high VO2 max helps her swim fast and recover quickly.
+</div>
+</div>
+ 
+        <!-- Athlete 5 -->
+<div class="imageandtext">
+<img src="Ryan Lochte.jpg" alt="Ryan Lochte">
+<div class="description">
+<strong>5. Ryan Lochte</strong><br>
+                Ryan Lochte has won 12 Olympic medals, including 6 golds, and holds multiple World Championship titles. He owns the current world record in the 200m individual medley with a time of 1:54.00.
+</div>
+</div>
+</div>
+ 
+    <!-- Anchor Button -->
+<div class="anchor-button">
+<a href="#more-swimmers">See More Swimmers</a>
+</div>
+ 
+    <!-- Image Gallery for Remaining 5 -->
+<div id="more-swimmers" class="image-gallery">
+<!-- Athlete 6 -->
+<div class="imageandtext">
+<img src="Kristof Milak.jpg" alt="Kristof Milak">
+<div class="description">
+<strong>6. Kristof Milak</strong><br>
+                Kristóf Milák holds the world record in the 200m butterfly and has won multiple gold medals at the World Championships and the Olympics.
+</div>
+</div>
+ 
+        <!-- Athlete 7 -->
+<div class="imageandtext">
+<img src="Michael Phelps.png" alt="Michael Phelps">
+<div class="description">
+<strong>7. Michael Phelps</strong><br>
+                Michael Phelps is the most decorated Olympian in history, with 28 Olympic medals, including 23 golds. He was dominant in butterfly, medley, and freestyle relay events.
+</div>
+</div>
+ 
+        <!-- Athlete 8 -->
+<div class="imageandtext">
+<img src="Kaylee McKeown.jpg" alt="Kaylee McKeown">
+<div class="description">
+<strong>8. Kaylee McKeown</strong><br>
+                Kaylee McKeown holds world records in the 50m and 200m backstroke and is the first woman in nearly 50 years to win both backstroke events in two consecutive Olympics.
+</div>
+</div>
+ 
+        <!-- Athlete 9 -->
+<div class="imageandtext">
+<img src="Katie Ledecky.jpg" alt="Katie Ledecky">
+<div class="description">
+<strong>9. Katie Ledecky</strong><br>
+                Katie Ledecky is known for her dominance in long-distance freestyle events. She holds world records in the 800m and 1500m freestyle.
+</div>
+</div>
+ 
+        <!-- Athlete 10 -->
+<div class="imageandtext">
+<img src="Caeleb Dressel.jpg" alt="Caeleb Dressel">
+<div class="description">
+<strong>10. Caeleb Dressel</strong><br>
+                Caeleb Dressel is known for his incredible power and speed. He holds world records in the 100m butterfly and has won multiple Olympic gold medals.
+</div>
+</div>
+</div>
+ 
+    <footer>
+<p>© 2024 Top Swimmers. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
